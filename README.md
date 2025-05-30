@@ -281,8 +281,7 @@ int main() {
 
 ## OUTPUT
 
-![Screenshot 2025-05-30 113214](https://github.com/user-attachments/assets/ad07340c-e374-4dab-98f1-b01ff8070e67)
-
+![Uploading Screenshot 2025-05-30 224614.png…]()
 
 
 ## RESULT
