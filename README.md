@@ -281,7 +281,8 @@ int main() {
 
 ## OUTPUT
 
-![Uploading Screenshot 2025-05-30 224614.png…]()
+
+![WhatsApp Image 2025-05-30 at 22 49 09_5069afa2](https://github.com/user-attachments/assets/6ce1f71c-471c-43d7-b7bd-473e1f2dccb1)
 
 
 ## RESULT
