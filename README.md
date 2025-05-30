@@ -15,20 +15,25 @@ To write a C Program to find area of rectangle using pointer.
 
 int main() {
     float length, width, area;
-    float *l, *w; 
-    printf("Enter the length of the rectangle: ");
-    scanf("%f", &length);
-    printf("Enter the width of the rectangle: ");
-    scanf("%f", &width);
-    l = &length;
-    w = &width;
-    area = (*l) * (*w); 
-    printf("The area of the rectangle is: %.2f\n", area);
+    float *ptrLength = &length, *ptrWidth = &width, *ptrArea = &area;
+
+    printf("Enter length of rectangle: ");
+    scanf("%f", ptrLength);
+
+    printf("Enter width of rectangle: ");
+    scanf("%f", ptrWidth);
+
+    *ptrArea = (*ptrLength) * (*ptrWidth);
+
+    printf("Area of rectangle: %.2f\n", *ptrArea);
+
     return 0;
 }
 ```
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/a723c462-d4cd-4416-bcb2-f971e098eb9b)
+		       	
+
+![438200097-d57acebc-a509-4b8d-9aed-88898bf5b657](https://github.com/user-attachments/assets/e57c1f9d-2279-4723-a6cf-c6ca2f6cdf5f)
 
 ## RESULT
 Thus the program to find area of rectangle using pointer has been executed successfully
@@ -51,29 +56,35 @@ To write a C Program to print 'WELCOME' using malloc() and free().
 ## PROGRAM
 ```
 #include <stdio.h>
-#include <stdlib.h>  
+#include <stdlib.h>
+#include <strings.h>
 
 int main() {
-    char *str; 
-    str = (char *)malloc(8 * sizeof(char)); 
+    char *str;
+    str = (char*) malloc(8 * sizeof(char));
+
     if (str == NULL) {
-        printf("Memory allocation failed.\n");
-        return 1;  
+        printf("Memory allocation failed!\n");
+        return 1;
     }
-    str = "WELCOME";
+    strcpy(str,"WELCOME");
     printf("%s\n", str);
-    free(str);
     return 0;
 }
 ```
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/b6110b62-99d0-4d3b-b0f3-a152fbe82fa3)
+
+![438200402-b3c49aa7-8486-48f4-9f0b-5379bcfcc9f0](https://github.com/user-attachments/assets/6c3bb68a-1c8b-4699-922d-1acf3ed62cea)
 
 
 
 ## RESULT
 Thus the program to print 'WELCOME' using malloc() and free() has been executed successfully
  
+.
+
+
+
 # EX-28-STUDENT-INFORMATION-USING-STRUCTURE
 
 ## AIM
@@ -112,8 +123,8 @@ int main()
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/e60fd157-705f-44d8-a8de-1eb3447014ca)
 
+![438200725-c3d1db83-f99e-4dbc-a476-ffae39c1049e](https://github.com/user-attachments/assets/7e06f61b-b47b-45a7-902f-39797bf8794e)
 
 ## RESULT
 
@@ -186,7 +197,11 @@ int main() {
 ```
 
  ## OUTPUT
-![image](https://github.com/user-attachments/assets/0fc1b132-e563-4bb7-a4e2-80afd0dd2eb5)
+ 
+
+
+ ![438200952-68fad761-c57b-4daf-b2bc-ea83e5a9389b](https://github.com/user-attachments/assets/c3bafe73-b787-4f35-982a-85bdc1764d9e)
+
 
 ## RESULT
 
@@ -265,7 +280,8 @@ int main() {
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/62242793-32d5-4b1e-b3ab-282ecbac1dbf)
+
+![Screenshot 2025-05-30 113214](https://github.com/user-attachments/assets/ad07340c-e374-4dab-98f1-b01ff8070e67)
 
 
 
